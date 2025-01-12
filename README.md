@@ -25,7 +25,7 @@ source activate.sh && pip install git+https://github.com/Yael-II/Fits-Header-Ext
 ```
 You may probably also need some additional libraries for the notebook:
 ```bash
-source activate.sh && pip install jupyter numpy matplotlib ipyaladin && deactivate
+source activate.sh && pip install jupyter numpy matplotlib ipympl && deactivate
 ```
 Create the directories `./Input/` and `./Output/` if its not already done.
 
@@ -51,3 +51,8 @@ deactivate
 The `fits_header_extractor` library documentation and `FitsHeaderExtractor` class description can be found on the Github [repository](https://github.com/Yael-II/Fits_Header_Extractor) of the package.
 
 
+## Acknoledgments
+
+This work made use of [Astropy](http://www.astropy.org), a community-developed core Python package and an ecosystem of tools and resources for astronomy ([2013A&A...558A..33A](https://ui.adsabs.harvard.edu/abs/2013A%26A...558A..33A/abstract), [2018AJ....156..123A](https://ui.adsabs.harvard.edu/abs/2018AJ....156..123A/abstract), [2022ApJ...935..167A](https://ui.adsabs.harvard.edu/abs/2022ApJ...935..167A/abstract)); [MOCpy](https://github.com/cds-astro/mocpy/), a Python library developped by the CDS to easily create and manipulate MOCs; and [Numpy](https://numpy.org/), a fundamental package for scientific computing in Python ([DOI:10.1038/s41586-020-2649-2](https://doi.org/10.1038/s41586-020-2649-2)).
+
+This project has been started in the context of a MSc2 Python project, at the Observatoire astronomique de Strasbourg.
