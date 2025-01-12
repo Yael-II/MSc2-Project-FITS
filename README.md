@@ -2,11 +2,11 @@
 
 ## Abstract
 
-[Fits](https://en.wikipedia.org/wiki/FITS) are widely used file formats in astronomy. The content of the file is in two parts: the header and the data. The goal of this Python project is to explore fits header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook.
+[FITS](https://en.wikipedia.org/wiki/FITS) files are widely used in astronomy. The content of a FITS file is in two parts: the header and the data. The goal of this Python project is to explore fits header. To this end, I created a python library: `fits_header_extractor`, providing a `FitsHeaderExtractor` class, and a notebook.
 
 ## Requirements
 
-The library requires `python` (tested with version 3.13.1), with the `venv` module and `pip`, a `bash` interpreter (`/usr/bin/env bash` by default), and at least 1 MiB of available space.
+The library requires `python` (tested with version 3.13.1), with the `venv` module and `pip`, a `bash` interpreter (`/usr/bin/env bash` by default), and at least 1.2 MiB of available space.
 
 ## Installation
 
@@ -16,7 +16,11 @@ python3 -m venv ./venv
 ```
 Then, install the library, run:
 ```
-source activate.sh && pip install https://github.com/Yael-II/Fits_Header_Extractor && deactivate
+source activate.sh && pip install git+https://github.com/Yael-II/Fits-Header-Extractor && deactivate
+```
+You may probably also need some additional libraries:
+```
+source activate.sh && pip install numpy matplotlib ipyaladin && deactivate
 ```
 Create the directories `./Input/` and `./Output/` if its not already done.
 
