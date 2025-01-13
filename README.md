@@ -18,7 +18,11 @@ The library requires `python` (tested with version 3.13.1), with the `venv` modu
 
 ## Installation
 
-Place all the content of the archive in a directory. Then, in this directory, to create the virtual environment, run:
+Place all the content of the archive in a directory. You can use:
+```bash
+git clone https://github.com/Yael-II/MSc2-Project-FITS
+```
+Then, in this directory, to create the virtual environment, run:
 ```bash
 python3 -m venv ./venv
 ```
