@@ -44,7 +44,7 @@ source activate.sh
 ```
 Then, launch the notebook with:
 ```bash
-jupyer-lab
+jupyter-lab || ./venv/bin/jupyter-lab
 ```
 and select the `exploration.ipynb` notebook. 
 
